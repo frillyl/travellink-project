@@ -42,9 +42,6 @@ TRAVELLINK aims to help users find access to information on tourist attractions 
    - Google Cloud Platform
    - Cloud Storage
    - Cloud SQL
-   - Google Maps Platform (Google Places API, Google Directions API)
-   - Cloud Function
-   - App Engine
    - Compute Engine
 
 3. Mobile Development
