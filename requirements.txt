@@ -1,0 +1,13 @@
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+Flask-Migrate
+SQLAlchemy
+tensorflow
+cloudstorage
+google-cloud-storage
+mysqlclient
+scikit-learn
+pandas
+numpy
+joblib
