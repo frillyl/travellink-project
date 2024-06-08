@@ -13,6 +13,7 @@ class Place(db.Model):
     long = db.Column(db.Float, nullable=False)
     price = db.Column(db.Integer, nullable=False)
     rating = db.Column(db.Float, nullable=False)
+    image = db.Column(db.String(255), nullable=True)
 
     def to_dict(self):
         return {
@@ -24,4 +25,5 @@ class Place(db.Model):
             'coordinate': {'lat': self.lat, 'lng': self.long},
             'price': self.price,
             'rating': self.rating,
+            'image': self.image,
         }

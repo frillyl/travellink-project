@@ -161,7 +161,24 @@ class CategoryListResource(Resource):
         return jsonify(category_list)
 
 
+class CityListResource(Resource):
+    def get(self):
+        cities = db.session.query(Place.city).distinct().all()
+        city_list = [city[0] for city in cities]
+        return jsonify(city_list)
+
+
+class PopularPlacesResource(Resource):
+    def get(self):
+        top_k = request.args.get(
+            'top_k', default=10, type=int)  # Default top_k to 10
+        places = Place.query.order_by(Place.rating.desc()).limit(top_k).all()
+        return jsonify([place.to_dict() for place in places])
+
+
 api.add_resource(PlaceListResource, '/places')
 api.add_resource(PlaceRecommendationResource,
                  '/places/<int:place_id>/recommendations')
 api.add_resource(CategoryListResource, '/categories')
+api.add_resource(CityListResource, '/cities')
+api.add_resource(PopularPlacesResource, '/places/popular')
