@@ -48,6 +48,7 @@ TRAVELLINK aims to help users find access to information on tourist attractions 
    - IDE (Android Studio)
    - PostMan
    - Networking Library (Retrofit, OkHttp, etc)
+   - Image Procesing Library(Glide)
    - Database Library (Room, SQLite, etc)
    - Git (version control)
 
