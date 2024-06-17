@@ -11,6 +11,7 @@ import site.encryptdev.travelink.R
 import site.encryptdev.travelink.data.remote.response.AllPlacesResponseItem
 import site.encryptdev.travelink.data.remote.response.PopularResponseItem
 import site.encryptdev.travelink.databinding.ActivityHomeBinding
+import site.encryptdev.travelink.ui.home.adapter.CategoryAdapter
 import site.encryptdev.travelink.ui.home.adapter.HomeAdapter
 import site.encryptdev.travelink.ui.home.adapter.PopularAdapter
 
@@ -29,6 +30,7 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
         binding.rvHome.layoutManager = LinearLayoutManager(this@HomeActivity, LinearLayoutManager.HORIZONTAL, false);
+        binding.rvCategory.layoutManager = LinearLayoutManager(this@HomeActivity, LinearLayoutManager.HORIZONTAL, false);
         binding.rvPopular.layoutManager = LinearLayoutManager(this@HomeActivity)
         viewModel.getPopular()
         viewModel.data.observe(this){
@@ -37,6 +39,11 @@ class HomeActivity : AppCompatActivity() {
         viewModel.getAllPlaces()
         viewModel.popularData.observe(this){
             initPopularData(it)
+        }
+
+        viewModel.getCategories()
+        viewModel.category.observe(this){
+            initCategory(it)
         }
 
     }
@@ -50,5 +57,11 @@ class HomeActivity : AppCompatActivity() {
     fun  initPopularData(data : List<AllPlacesResponseItem>){
         val adapter = PopularAdapter(data)
         binding.rvPopular.adapter = adapter
+    }
+
+
+    fun initCategory(data : List<String>){
+        val adapter = CategoryAdapter(data)
+        binding.rvCategory.adapter = adapter
     }
 }

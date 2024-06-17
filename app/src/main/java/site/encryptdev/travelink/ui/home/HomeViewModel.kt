@@ -22,6 +22,9 @@ class HomeViewModel : ViewModel() {
     private var _loading = MutableLiveData<String>("NONE")
     val loading : LiveData<String> = _loading
 
+    private var _category = MutableLiveData<List<String>>()
+    val category : LiveData<List<String>> = _category
+
     fun getPopular(){
         _loading.value = "HOME"
         val client = ApiConfig.getService().getPopular()
@@ -54,6 +57,22 @@ class HomeViewModel : ViewModel() {
             }
 
             override fun onFailure(p0: Call<List<AllPlacesResponseItem>>, p1: Throwable) {
+
+            }
+
+        })
+    }
+
+    fun getCategories(){
+        _loading.value = "CATEGORY"
+        val client = ApiConfig.getService().getAllCategories()
+        client.enqueue(object : Callback<List<String>>{
+            override fun onResponse(p0: Call<List<String>>, response: Response<List<String>>) {
+              _loading.value = "NONE"
+                _category.value = response.body()
+            }
+
+            override fun onFailure(p0: Call<List<String>>, p1: Throwable) {
 
             }
 
