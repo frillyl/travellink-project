@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-"# Machine-Learning-Capstone" 
-"# Machine-Learning-Capstone" 
-=======
 # Machine Learning Path
 
 ## Description
@@ -21,4 +17,3 @@ Our team built the dataset by collecting data from several sources such as Kaggl
 ## Content Based Filtering
 Content-based filtering is a recommendation technique that suggests items similar to those a user has shown interest in, based on the item's features. Unlike collaborative filtering, which relies on user-item interactions, content-based filtering uses the properties of the items themselves to make recommendations. In this project, content-based filtering is used to recommend tourist attractions in Indonesia by comparing their features. The features considered include Category, City, Price, Rating, Longitude, and Latitude. By encoding these features and training a neural network, the system can learn the relationships between different attractions and recommend similar ones based on a query attraction.
 
->>>>>>> e3319a7bed1f1758933cb6460e208c138b42f5a3
