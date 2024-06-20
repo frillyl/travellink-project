@@ -1,5 +1,6 @@
 package site.encryptdev.travelink.ui.detail
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -14,6 +15,7 @@ import site.encryptdev.travelink.data.remote.response.RecomendationResponseItem
 import site.encryptdev.travelink.databinding.ActivityDetailBinding
 import site.encryptdev.travelink.dto.Places
 import site.encryptdev.travelink.ui.detail.adapter.RecomendationAdapter
+import site.encryptdev.travelink.ui.home.HomeActivity
 
 class DetailActivity : AppCompatActivity() {
 
@@ -52,6 +54,10 @@ class DetailActivity : AppCompatActivity() {
         viewModel.getRecomendation(place?.placeId.toString())
         viewModel.recomendation.observe(this){
             initRecom(it)
+        }
+
+        binding.button.setOnClickListener {
+            startActivity(Intent(this@DetailActivity, HomeActivity::class.java))
         }
 
     }

@@ -8,8 +8,17 @@ data class RecomendationResponseItem(
 	@field:SerializedName("city")
 	val city: String,
 
+	@field:SerializedName("description")
+	val description: String,
+
+	@field:SerializedName("place_id")
+	val placeId: Int,
+
 	@field:SerializedName("price")
 	val price: Any,
+
+	@field:SerializedName("image")
+	val image: String,
 
 	@field:SerializedName("similarity")
 	val similarity: Any,
@@ -18,7 +27,7 @@ data class RecomendationResponseItem(
 	val name: String,
 
 	@field:SerializedName("rating")
-	val rating: Any,
+	val rating: Double,
 
 	@field:SerializedName("rank")
 	val rank: Int,

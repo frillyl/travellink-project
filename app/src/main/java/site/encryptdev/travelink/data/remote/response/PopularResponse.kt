@@ -35,7 +35,7 @@ data class PopularResponseItem(
 	val price: Int,
 
 	@field:SerializedName("rating")
-	val rating: Any,
+	val rating: Double,
 
 	@field:SerializedName("description")
 	val description: String,
