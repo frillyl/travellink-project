@@ -12,13 +12,13 @@ TRAVELLINK aims to help users find access to information on tourist attractions 
 
 | Name                                     | Student ID     | Path                | Contact    |
 | -----------------------------------------| ---------------| ------------------- |------------|
-| Jefri Munandar                           | M322D4KY2535   | Machine Learning    |            |
-| Muhammad Rofiid Ramdhan                  | M277D4KY3283   | Machine Learning    |            |
-| Huffaz Muhammad Abdurrofi Baith          | M277D4KY3284   | Machine Learning    |            |
+| Jefri Munandar                           | M322D4KY2535   | Machine Learning    |  <a href="https://github.com/Mathdroit"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>           |
+| Muhammad Rofiid Ramdhan                  | M277D4KY3283   | Machine Learning    |   <a href="https://github.com/RofidRamdhan"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>          |
+| Huffaz Muhammad Abdurrofi Baith          | M277D4KY3284   | Machine Learning    |  <a href="https://github.com/huffazmabaith"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>           |
 | Frilly Lakumani                          | C009D4KX0659   | Cloud Computing     | <a href="https://github.com/frillyl"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>           |
 | Yasmin Hafiza Isa Puteri                 | C009D4KX0526   | Cloud Computing     | <a href="https://github.com/yasminhafiza"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>             |
 | Muhammad Qolbu Salim                     | A009D4KY3473   | Mobile Development  | <a href="https://github.com/qolbusalim"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>           |
-| Bayu Febriyono Putra                     | A123D4KY4409   | Mobile Development  |            |
+| Bayu Febriyono Putra                     | A123D4KY4409   | Mobile Development  |<a href="https://github.com/BayuFebriyono"><img src="https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a1ac70484ab90ae870152b_github%204.png" style="width: 80px; height: auto;" /></a>            |
 
 
 <br>
