@@ -23,9 +23,6 @@ TRAVELLINK aims to help users find access to information on tourist attractions 
 
 <br>
 
-# Getting Started
-
-# Usage
 
 # Technology Used 
 
